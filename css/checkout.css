@@ -5,3 +5,9 @@
     font-family: "EncodeSans-Regular";
     box-sizing: border-box;
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
