@@ -17,7 +17,7 @@ header{
 
 .main {
     /* background: red; */
-    padding: var(--space-layout-padding-t);
+    padding: var(--space-layout-padding-lr);
 }
 .checkout__details {
     /* background: blue; */
@@ -113,6 +113,29 @@ header{
 }
 
 
+.section__shopping{
+    margin-top: 20px;
+}
+
+.shopping__title{
+    margin-bottom: 15px;
+}
+
+.section__card{
+    margin-bottom: 15px;
+}
+
+
+/* .shopping__card img{
+    transform: rotate(272deg);
+} */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
 .dropdown__button {
     background-color: var(--color-3);
     border-radius: 5px;
@@ -132,13 +155,7 @@ header{
     gap: 10px;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-}
-
-.dropdown-content {
+.dropdown__content {
     display: none;
     position: absolute;
     background-color: var(--color-5);
@@ -177,4 +194,53 @@ header{
 
 .dropdown:hover .dropdown__button .shopping__option{
     filter: invert(1);
+}
+
+.section__bill{
+    margin-top: 25px;
+}
+
+.section__bill span{
+    font-family: "EncodeSans-SemiBold";
+}
+
+.bill__total{
+    /* background: blue; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.bill__fee{
+    /* background: violet; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--color-1);
+}
+
+.bill__subtotal{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+footer{
+    position: fixed;
+    bottom: 15px;
+    width: 90%;
+    margin: 20px;
+}
+
+.main__footer{
+    background: var(--color-4);
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    color: white;
 }
