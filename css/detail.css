@@ -120,11 +120,25 @@
     margin-bottom: 5px;
     font-family: "EncodeSans-Bold";
 }
+
+.imag{
+    filter: invert(1);
+}
+
+.product__size img:hover{
+    filter: invert(1);
+}
+
 .product__color {
     width: 38%;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 5px; 
     font-family: "EncodeSans-Bold";
+}
+
+.product__color img:hover{
+    border: 2px solid grey;
+    border-radius: 50px;
 }
 
 .product__size h5,
