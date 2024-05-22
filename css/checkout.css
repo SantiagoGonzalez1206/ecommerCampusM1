@@ -43,7 +43,6 @@ header{
 }
 
 .product_image {
-    /* background: maroon; */
     width: var(--layout-imagen-width-checkout);
     height: var(--layout-imagen-height-checkout);
 }
@@ -52,7 +51,7 @@ header{
     width: var(--layout-image-width-checkout);
     height: var(--layout-image-height-checkout);
     border-radius: 15px;
-    object-fit: cover;
+    object-fit: scale-down ;
     object-position: 0 0px;
 
 }

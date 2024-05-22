@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail</title>
     <link rel="stylesheet" href="../css/detail.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="../js/detail.js" defer></script>
 </head>
 <body>
     <main class="main">
-        <section class="main__section">
-            <article class="article__product">
+        <section id="main__section__gallery" class="main__section">
+            <!-- <article class="article__product">
                 <div class="product__image">
                     <img src="../storage/img/Barca2024.webp">
                 </div>
@@ -19,10 +21,10 @@
                     </a> 
                     <img src="../storage/img/heartBlack.svg">
                 </div>
-            </article>
+            </article> -->
         </section>
-        <section class="main__section">
-            <article class="article__detail">
+        <section id="main__section__title" class="main__section">
+            <!-- <article class="article__detail">
                 <div class="detail__head">
                     <h1>Camiseta FC Barcelona</h1>
                     <div class="product__select">
@@ -40,44 +42,47 @@
                     <span>5.0</span>
                     <a href="#">(7932 reviews)</a>
                 </div>
-            </article>
+            </article> -->
         </section>
         <section class="main__section">
             <article class="product__information">
-                <p>La camiseta actuel del club Futbol Club Barcelona, estampada en algodon y con el logo de spotify <strong> Read More ... </strong> </p>
-            </article>
+                 <!-- <details>
+                    <summary>Click me</summary>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos officia necessitatibus non alias, consequatur debitis vel minus quaerat iste molestias, repellat aliquid, ipsa atque quas corporis iusto consectetur vitae? Maxime!</p>
+                </details> -->
+            </article>  
             <hr>
         </section>
         <section class="main__section">
             <article class="product__custom">
                 <div class="product__size">
-                    <h5>Talla</h5>
+                    <!-- <h5>Talla</h5>
                     <div>
                         <img src="../storage/img/s.svg">
                         <img src="../storage/img/m.svg">
                         <img id= "imag" src="../storage/img/l.svg">
                         <img src="../storage/img/xl.svg">
-                    </div>
+                    </div> -->
                 </div>
-                <!-- <div class="product__color">
-                    <h5>Color</h5>
+                <div class="product__color">
+                    <!-- <h5>Color</h5>
                     <div>
                         <img src="../storage/img/grey.svg">
                         <img src="../storage/img/black.svg">
                         <img src="../storage/img/greyBlack.svg">
-                    </div>
-                </div> -->
+                    </div> -->
+                </div>
             </article>
         </section>
     </main>
-    <footer class="footer">
+    <footer id="main__section__price" class="footer">
         <ul class="footer__ul">
-            <li>
+            <!-- <li>
                 <a href="./checkout.html">
                     <img src="../storage/img/shopping-cart.svg">
                     <span>Añadir al carrito | $130.000<del><sub>$150.000</sub></del></span>
                 </a>
-            </li>
+            </li> -->
         </ul>
     </footer>
 </body>

@@ -1,18 +1,18 @@
 :root{
-    --color-1: #292526;
-    --color-2: #1B2028;
-    --color-3: #A4AAAD;
-    --color-4: #111111;
+    --color-2: #5a5a5a;
+    --color-1: #b68a8a;
+    --color-3: #94999b;
+    --color-4: #89928d;
 
 
     --color-5: #FFFFFF;
     --space-layout-padding-t: 0px 15px;
-    --space-layout-padding-lr: 10px;
+    --space-layout-padding-lr: 5px;
     --layout-image-width: 100%;
     --layout-image-height: 350px;
 
     --layout-image-width-detail: 100%;
-    --layout-image-height-detail: 392px;
+    --layout-image-height-detail: 385px;
 
     --layout-image-width-checkout: 70px;
     --layout-image-height-checkout: 70px;
