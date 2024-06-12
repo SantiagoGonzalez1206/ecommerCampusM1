@@ -105,7 +105,7 @@
     list-style: none;
 }
 .nav__ul li a{
-    width: 105px;
+    width: 125px;
     height: 35px;
     font-family: "EncodeSans-Medium";
     /* background: orange; */
@@ -121,6 +121,12 @@
 }
 .nav__ul li a:hover{
     filter: invert(1);
+}
+
+.nav__ul li a span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .main__article{
