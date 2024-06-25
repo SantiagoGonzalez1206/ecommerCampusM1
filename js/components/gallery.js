@@ -57,7 +57,7 @@ export const galleryCheckout = async()=>{
             <div class="product__description">
                 <h3>${(value.product_title).substring(0, 15)}...</h3>
                 <small> ⭐ ${value.product_star_rating ? value.product_star_rating : "*No Ratings*"}</small>
-                <span id ="precio">${value.product_price}</span>
+                <span id ="spanPrecio">${value.product_price}</span>
             </div>
             <div class="product__custom">
                 <img src="../storage/img/option.svg">
@@ -73,7 +73,7 @@ export const galleryCheckout = async()=>{
 return plantilla;
 }
 
-export const galleryBill = async({ data:dataUpdate } = res)=>{
+export const galleryBill = async()=>{
     return /*html*/`
         <div class="bill__total">
             <label id= "Totalitems">Total(9 items)</label>
