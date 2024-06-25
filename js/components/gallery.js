@@ -77,7 +77,7 @@ export const galleryBill = async()=>{
     return /*html*/`
         <div class="bill__total">
             <label id= "Totalitems">Total(9 items)</label>
-            <span id ="spanPrecio">272.800</span>
+            <span id ="spanPrecio">0.00</span>
         </div>
         <div class="bill__fee">
             <label>Shipping Fee</label>
@@ -85,7 +85,7 @@ export const galleryBill = async()=>{
         </div>
         <div class="bill__subtotal">
             <label >Sub Total</label>
-            <span id= "subPrecio">272.800</span>
+            <span id="subPrecio">0.00</span>
         </div>`;
     }
 
