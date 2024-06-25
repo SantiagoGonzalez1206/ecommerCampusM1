@@ -38,4 +38,83 @@ export const galleryCategory = ({data: {product_photos}} = res)=>{
                 <img src="../storage/img/heartBlack.svg">
             </div>
         </article>`;
+<<<<<<< HEAD
+=======
+}
+
+export const galleryCheckout = async()=>{
+    let keys = Object.keys(sessionStorage)
+    let plantilla = "";
+    keys.forEach(key=>{
+        let diccionarios = JSON.parse(sessionStorage.getItem(key));
+        if(diccionarios.checkout){
+            let value = diccionarios.data;
+            plantilla += /*html*/`
+            <article class="details__product">
+            <div class="product_image">
+                <img src="${value.product_photo}">
+            </div>
+            <div class="product__description">
+                <h3>${(value.product_title).substring(0, 15)}...</h3>
+                <small> ⭐ ${value.product_star_rating ? value.product_star_rating : "*No Ratings*"}</small>
+                <span id ="precio">${value.product_price}</span>
+            </div>
+            <div class="product__custom">
+                <img src="../storage/img/option.svg">
+            <div id = "precio" class="product__select">
+                <img src="../storage/img/minus.svg" id= "decreaseQuantity">
+                <span id ="quantity">1</span>
+                <img src="../storage/img/plus.svg" id= "increaseQuantity">
+            </div>
+        </div>
+        </article>`;
+        };
+    })
+return plantilla;
+}
+
+export const galleryBill = async({ data:dataUpdate } = res)=>{
+    return /*html*/`
+        <div class="bill__total">
+            <label id= "Totalitems">Total(9 items)</label>
+            <span id ="spanPrecio">272.800</span>
+        </div>
+        <div class="bill__fee">
+            <label>Shipping Fee</label>
+            <span>0.00</span>
+        </div>
+        <div class="bill__subtotal">
+            <label >Sub Total</label>
+            <span id= "subPrecio">272.800</span>
+        </div>`;
+    }
+
+
+export const itemsCarrito = ()=>{
+    return /*html*/`
+    <footer class="footer">
+    <ul class="footer__ul">
+        <li>
+            <a href="index.html">
+                <img src="storage/img/homeSelect.svg">
+            </a>
+        </li>
+        <li>
+            <a href="views/detail.html">
+                <img src="storage/img/bag.svg">
+            </a>
+        </li>
+        <li>
+            <a href="views/checkout.html">
+                <img src="storage/img/heart.svg">
+            </a>
+        </li>
+        <li>
+            <a href="index.html">
+                <img src="storage/img/profile.svg">
+            </a>
+        </li>
+    </ul>
+</footer>`;
+>>>>>>> f9bbe3c (fix: :construction: adventages in button of quantity)
 }
